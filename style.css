@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+    --pink: #EF66B3;
+    --blue:#02A1E9;
+    --dark-blue: #031321;
+}
+.container-1 {
+    background-color: var(--blue) ;
+}
+.footer {
+    background-color: var(--dark-blue);
+}
