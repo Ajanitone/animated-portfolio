@@ -153,20 +153,7 @@
     opacity: 0.7;
 }
 .txt-item:hover{
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-/* Change the position of transformed element */
-  transform-origin: bottom;
-/*  Rotates around x-axis */
-  transform: rotateX(180deg);
-  line-height: 0.85em;
-/* linear-gradient defined by up,down,left ,right ,diagonal */
-  background-image: linear-gradient(0deg, #28fb36 0, transparent 95%);
-  -webkit-background-clip: text;
-  color: transparent;         
-  opacity: 0.7;
+
   animation:swing  3s linear 1s infinite alternate;
 }
 .txt-item-1 {
