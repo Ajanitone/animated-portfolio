@@ -10,11 +10,8 @@
   --pink: #ef66b3;
   --light-blue:#04A9F4;
   --blue: #03a9f4;
-  --dark-blue: #004b6c;
+  --dark-blue: #031321;
 }
-
-/* NAVIGATION */
-
 
 
 /* MAIN-SECTION */
@@ -33,7 +30,7 @@
 .info {
     position: absolute;
     top: 6rem;
-    left:  40rem;
+    left:  70rem;
     font-size: 2rem;
     text-align: center;
     justify-content: center;
@@ -130,7 +127,7 @@
   
 .txt {
    background: radial-gradient(#03a9f4, #004b6c);
-    height: 30rem;
+    padding: 2em;
     color: white;
     font-size: 7rem;
     display: block;
@@ -197,6 +194,10 @@
 /* FOOTER */
 .footer {
   background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+
 }
 
 header {
@@ -366,7 +367,7 @@ li {
 .fa-greater-than {
   float: right;
   padding-top: 0.5rem;
-=======
+
   width: 100%;
   display: flex;
   justify-content: center;
