@@ -4,50 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animation-Portfolio</title>
+    <title>Drop Down Menu</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4ab5cd7299.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <main class="container">
-      <header class="header">
-        <nav class="navbar">
-          <div class="logo">
-            <img src="./images/logo.png" alt="" />
-          </div>
-          <ol>
-            <li><a href="http://" target="_blank" rel="">Home</a></li>
-            <li><a href="http://" target="_blank" rel="">About</a>
-            <li>Experience</li>
-            <li>Portfolio</li>
-            <li>Education</li>
-         </li>
-            <li><a href="http://" target="_blank" rel="">Services</a>
-            <li>Web Designing</li>
-            <li>Marketing</li>
-            <li>Mobile App</li>
+    <header>
+      <div class="logo">
+        <img src="./logo.png" alt="" />
+      </div>
+      <ul class="main-ul">
+        <li>
+          <i class="double fa-solid fa-house-chimney"></i><a href="">Home</a>
         </li>
-            <li><a href="http://" target="_blank" rel="">Clients</a></li>
-            <li><a href="http://" target="_blank" rel="">Pricing</a></li>
-            <li><a href="http://" target="_blank" rel="">Training</a></li>
-            <li><a href="http://" target="_blank" rel="">Contact</a></li>
-          </ol>
-        </nav>
-      </header>
-      <section class="container-1">
-          <div class="info">i</div>
-      </section>
-      <section class="txt">
-          <h1>
-              <span>FREELANCE</span>
-              <span>WEB DEVELOPER</span>
-          </h1>
-      </section>
-    <footer class="footer">
-        <h2>
-            <span>Home</span>
-            <span>About</span>
-        </h2>
-    </footer>
-</main>
+        <li class="about-li">
+          <i class="double fa-solid fa-user"></i><a href="">About Me</a
+          ><i class="fa-solid fa-angle-down"></i>
+          <div class="dropdown-content drop-about">
+            <ul>
+              <li><a href="">Experience</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">Education</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="services-li">
+          <i class="double fa fa-clone"></i><a href="">Services</a
+          ><i class="fa-solid fa-angle-down"></i>
+
+          <div class="dropdown-content drop-services">
+            <ul>
+              <li><a href="">Web Designing</a></li>
+              <li class="sub-dropdown">
+                <a href="">Marketing</a><i class="fa-solid fa-greater-than"></i>
+                <ul class="ul-sub-marketing">
+                  <li><a href="">SEO</a></li>
+                  <li><a href="">Social Media</a></li>
+                  <li><a href="">E-mail Marketing</a></li>
+                </ul>
+              </li>
+              <li class="sub-dropdown">
+                <a href="">Mobile App</a
+                ><i class="fa-solid fa-greater-than"></i>
+                <ul class="ul-sub-mobile">
+                  <li><a href="">Android App</a></li>
+                  <li><a href="">IOS App</a></li>
+                  <li><a href="">Ionic App</a></li>
+                  <li><a href="">Flutter App</a></li>
+                  <li><a href="">Unity App</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li><i class="double fa-solid fa-users"></i><a href="">Clients</a></li>
+        <li>
+          <i class="double fa-solid fa-indian-rupee-sign"></i
+          ><a href="">Pricing</a>
+        </li>
+        <li>
+          <i class="double fa-regular fa-pen-to-square"></i
+          ><a href="">Training</a>
+        </li>
+        <li><i class="double fa-solid fa-phone"></i><a href="">Contact</a></li>
+      </ul>
+    </header>
   </body>
 </html>
