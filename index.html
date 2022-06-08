@@ -4,66 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animation-Portfolio</title>
+    <title>Drop Down Menu</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4ab5cd7299.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jura:wght@300;400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Maven+Pro:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;600&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/53dfbd1f5f.js" crossorigin="anonymous"></script>
-  </head>
+  </head>   
   <body>
-    <main class="container">
-      <header class="header">
-        <nav>
-          <img src="./images/logo.png" alt="logo">
-          <ul>
-              <li class="item"><a href="#"><i class="fa fa-home"></i>Home</a></li>
-              
-              <li class="item"><a href="#"><i class="fa fa-user"></i>About Me <i class="fa fa-angle-down"></i></a>
-                  <div class="sub-menu-1">
-                      <ul>
-                          <li><a href="#">Experience</a></li>
-                          <li><a href="#">Portfolio</a></li>
-                          <li><a href="#">Education</a></li>
-                      </ul>
-                  </div>
+     <main class="container">
+    <header>
+      <div class="logo">
+        <img src="./logo.png" alt="" />
+      </div>
+      <ul class="main-ul">
+        <li>
+          <i class="double fa-solid fa-house-chimney"></i><a href="">Home</a>
+        </li>
+        <li class="about-li">
+          <i class="double fa-solid fa-user"></i><a href="">About Me</a
+          ><i class="fa-solid fa-angle-down"></i>
+          <div class="dropdown-content drop-about">
+            <ul>
+              <li><a href="">Experience</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">Education</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="services-li">
+          <i class="double fa fa-clone"></i><a href="">Services</a
+          ><i class="fa-solid fa-angle-down"></i>
+
+          <div class="dropdown-content drop-services">
+            <ul>
+              <li><a href="">Web Designing</a></li>
+              <li class="sub-dropdown">
+                <a href="">Marketing</a><i class="fa-solid fa-greater-than"></i>
+                <ul class="ul-sub-marketing">
+                  <li><a href="">SEO</a></li>
+                  <li><a href="">Social Media</a></li>
+                  <li><a href="">E-mail Marketing</a></li>
+                </ul>
               </li>
-  
-              <li class="item"><a href="#"><i class="fa fa-clone"></i>Services<i class="fa fa-angle-down"></i></a>
-                  <div class="sub-menu-1">
-                      <ul>
-                          <li><a href="#">Web Designing</a></li>
-                          <li class="hover-me"><a href="#">Marketing</a><i class="fa fa-angle-right"></i>
-                              <div class="sub-menu-2">
-                                  <ul>
-                                      <li><a href="#">SEO</a></li>
-                                      <li><a href="#">Social Media</a></li>
-                                      <li><a href="#">E-mail Marketing</a></li>
-                                  </ul>
-                              </div>
-                          </li>
-                          <li class="hover-me"><a href="#">Mobile App</a><i class="fa fa-angle-right"></i>
-                              <div class="sub-menu-2">
-                                  <ul>
-                                      <li><a href="#">Android App</a></li>
-                                      <li><a href="#"></a>IOS App</li>
-                                      <li><a href="#">Ionic App</a></li>
-                                      <li><a href="#">Flutter App</a></li>
-                                      <li><a href="#">Unity App</a></li>
-                                  </ul>
-                              </div>
-                          </li>
-                      </ul>
-                  </div>
+              <li class="sub-dropdown">
+                <a href="">Mobile App</a
+                ><i class="fa-solid fa-greater-than"></i>
+                <ul class="ul-sub-mobile">
+                  <li><a href="">Android App</a></li>
+                  <li><a href="">IOS App</a></li>
+                  <li><a href="">Ionic App</a></li>
+                  <li><a href="">Flutter App</a></li>
+                  <li><a href="">Unity App</a></li>
+                </ul>
               </li>
-              <li class="item"><a href="#"><i class="fa fa-users"></i>Clients</a></li>
-              <li class="item"><a href="#"><i class="fa fa-inr"></i>Pricing</a></li>
-              <li class="item"><a href="#"><i class="fa fa-edit"></i>Training</a></li>
-              <li class="item"><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
-          </ul>
-      </nav>
+            </ul>
+          </div>
+        </li>
+
+        <li><i class="double fa-solid fa-users"></i><a href="">Clients</a></li>
+        <li>
+          <i class="double fa-solid fa-indian-rupee-sign"></i
+          ><a href="">Pricing</a>
+        </li>
+        <li>
+          <i class="double fa-regular fa-pen-to-square"></i
+          ><a href="">Training</a>
+        </li>
+        <li><i class="double fa-solid fa-phone"></i><a href="">Contact</a></li>
+      </ul>
+    </header>         
       
-      </header>
+ 
       <section class="container-1"> 
           <div class="info">
             <div class="info-1">i</div>
